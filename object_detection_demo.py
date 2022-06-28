@@ -14,4 +14,3 @@ for file in storage_service.get_all_files(bucket_name):
 
         for label in labels:
             print('-- ' + label['Name']+': '+str(label['Confidence']))
-
