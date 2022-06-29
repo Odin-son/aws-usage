@@ -37,3 +37,9 @@ Resources deployed:
 - Lambda ARN: arn:aws:lambda:us-east-1:<UID>:function:capabilities-dev
 - Rest API URL: https://<UID>.execute-api.us-east-1.amazonaws.com/api/
 ```
+
+5. (optional) web hosting using s3 bucket
+in `web/scripts.js:3`,
+```
+const serverUrl: "https://<UID>.execute-api.us-east-1.amazonaws.com/api";
+```
