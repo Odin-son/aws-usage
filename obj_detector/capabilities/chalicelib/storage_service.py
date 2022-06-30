@@ -10,7 +10,7 @@ class StorageService:
         return self.bucket_name
 
     def list_files(self):
-        response = self.client.list_objects_v2(Bucket = self.bucket_name)
+        response = self.client.list_objects_v2(Bucket=self.bucket_name)
 
         files = []
         for content in response['Contents']:
