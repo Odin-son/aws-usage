@@ -8,7 +8,7 @@ class RecognitionService:
 
     def detect_objects(self, file_name):
         response = self.client.detect_labels(
-            Image = {
+            Image={
                 'S3Object': {
                     'Bucket': self.bucket_name,
                     'Name': file_name
