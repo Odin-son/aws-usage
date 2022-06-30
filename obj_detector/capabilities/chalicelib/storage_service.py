@@ -15,8 +15,9 @@ class StorageService:
         files = []
         for content in response['Contents']:
             files.append({
-                'location' : self.bucket_name,
-                'file_name' : content['Key'],
-                'url' : "http://" + self.bucket_name + ".s3.amazonaws.com/" + content['Key']
+                'location': self.bucket_name,
+                'file_name': content['Key'],
+                'url': "http://" + self.bucket_name + 
+                       ".s3.amazonaws.com/" + content['Key']
             })
         return files
