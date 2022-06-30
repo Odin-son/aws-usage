@@ -13,6 +13,7 @@ storage_location = 'bucket.aws'
 storage_service = StorageService(storage_location)
 recognition_service = RecognitionService(storage_service)
 
+
 @app.route('/demo-obj-detection', cors=True)
 def demo_obj_detection():
     files = storage_service.list_files()
