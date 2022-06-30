@@ -5,7 +5,7 @@ class StorageService:
     def __init__(self, storage_location) -> None:
         self.client = boto3.client('s3')
         self.bucket_name = storage_location
-    
+        
     def get_storage_location(self):
         return self.bucket_name
     
